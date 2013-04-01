@@ -4,8 +4,8 @@ $: << "."
 require 'model'
 require 'pp'
 
-b1 = Bot.new(Bot.coll.find_one({screen_name: 'eye_of_phelrine'}))
-b2 = Bot.new(Bot.coll.find_one({screen_name: 'proof_tana'}))
+b1 = Bot.new(Bot.coll.find_one({screen_name: 'knowl_KGB'}))
+b2 = Bot.new(Bot.coll.find_one({screen_name: 'knowl_bot'}))
 
 puts "HANDLE MENTION"
 b1.handle_mentions

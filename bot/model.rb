@@ -149,7 +149,7 @@ class Bot
   end
 
   def handle_mentions
-    mentions = @client.mentions_timeline(count: 2)
+    mentions = @client.mentions_timeline(count: 20)
     mentions.each{|tw|
       Tweet.store(tw)
       utw = UpdatedTweet.find(tw.in_reply_to_status_id)
